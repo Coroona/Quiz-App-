@@ -14,6 +14,7 @@ import com.example.cannaquiz.questions.HistoryQuestions
 import com.example.cannaquiz.questions.StrainsQuestions
 import com.example.cannaquiz.questions.TerpsQuestions
 import com.example.cannaquiz.questions.GrowQuestions
+import com.example.cannaquiz.questions.health.HealthQuestions
 
 class QuestionActivity : AppCompatActivity() {
 
@@ -62,6 +63,7 @@ class QuestionActivity : AppCompatActivity() {
             "Goods" -> GoodsQuestions.questions
             "History" -> HistoryQuestions.questions
             "Strains" -> StrainsQuestions.questions
+            "Health" -> HealthQuestions.questions
             "Terps" -> TerpsQuestions.questions
             else -> GrowQuestions.questions
         }
