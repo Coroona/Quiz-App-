@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050303"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Obere CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#A5C7A5"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Select a Subject"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Enhance your growing knowledge"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:background="@drawable/rounded_image"
+                android:src="@drawable/weed_icon" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Unterer Scroll-Bereich mit GridLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/card_view_design"
+        android:layout_marginTop="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="12dp"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <!-- Grow Card 1 -->
+                <androidx.cardview.widget.CardView
+                    android:onClick="grow"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#2E4E2E">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rounded_image"
+                            android:src="@drawable/grow_icon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- health Card 2 -->
+                <androidx.cardview.widget.CardView
+                    android:onClick="health"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#2E4E2E">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rounded_image"
+                            android:src="@drawable/health_icon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Terps Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:onClick="terps"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#2E4E2E">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rounded_image"
+                            android:src="@drawable/terps_icon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- History Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:onClick="history"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#2E4E2E">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rounded_image"
+                            android:src="@drawable/history_icon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- strains Card 5 -->
+                <androidx.cardview.widget.CardView
+                    android:onClick="strains"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#2E4E2E">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rounded_image"
+                            android:src="@drawable/strains_icon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- the goods Card 6 -->
+                <androidx.cardview.widget.CardView
+                    android:onClick="goods"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:backgroundTint="#2E4E2E">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rounded_image"
+                            android:src="@drawable/goods_icon" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
