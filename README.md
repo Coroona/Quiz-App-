@@ -1,1 +1,2 @@
 # Quiz-App-
+Diese App wurde in Android Studio mit der Benutzung von Kotlin entwickelt und dient zur unterhaltsamen Informations- und Lernzwecken. Beim öffnen der App wird 3 Sekunden der Startbildschirm angezeigt, bevor man auf die Hauptseite weitergeleitet wird. Hier gibt es verschiedene Kategorien mmir jeweils 30 Frgaen zum bestimmten Thema. Die Fragem beginnen leicht und werden tiefgründiger und schwieriger im Spielverlauf. 
