@@ -50,9 +50,9 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- aktuelle Fragenanzahl-->
 
-    <!-- Frage-->
+
+
 
     <View
         android:layout_width="match_parent"

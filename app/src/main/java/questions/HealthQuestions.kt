@@ -1,7 +1,7 @@
 package com.example.cannaquiz.questions.health
 
 import com.example.cannaquiz.model.Question
-
+//Fragen nach Abruffolge geordnet
 object HealthQuestions {
     val questions = listOf(
 

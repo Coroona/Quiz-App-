@@ -19,13 +19,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
-
+    //Unterteilung der Kategorien
     fun grow(view: View) {
         startQuestionActivity("Grow")
     }
 
     fun health(view: View) {
-        startQuestionActivity("Health") // Falls du diese Kategorie hast
+        startQuestionActivity("Health")
     }
 
     fun terps(view: View) {
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, QuestionActivity::class.java)
         intent.putExtra("CATEGORY", category)
         startActivity(intent)
-        // Kein finish(), damit man zurückkehren kann (optional)
+
     }
 }
 

@@ -20,6 +20,7 @@
 
         <TextView
             android:id="@+id/AppName"
+            android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#262F26"
@@ -34,7 +35,7 @@
             android:textSize="28sp"
             android:textStyle="bold"
             android:visibility="visible" />
-
+        <!-- Foto Design -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"

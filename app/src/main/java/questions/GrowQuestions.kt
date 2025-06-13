@@ -4,7 +4,7 @@ package com.example.cannaquiz.questions
 import com.example.cannaquiz.model.Question
 object GrowQuestions{
 val questions = listOf(
-
+// fragen nach abruffolge geordnet
     Question(
         question = "Warum ist aktive Luftzirkulation wichtig beim Indoor-Grow?",
         options = listOf(
@@ -82,7 +82,7 @@ val questions = listOf(
 
     ),
     Question(
-        question = "Wozu dient die Berechnung des VPD im Growraum?",
+        question = "Wozu dient die Berechnung des VPD(Dampfdruckdefizit) im Growraum?",
         options = listOf(
             "Zur Messung der CO₂-Sättigung",
             "Um Lüfterlautstärke zu steuern",

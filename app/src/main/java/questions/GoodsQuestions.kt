@@ -2,7 +2,7 @@ package com.example.cannaquiz.questions
 
 
 import com.example.cannaquiz.model.Question
-
+//Fragen geordnet nach Abruffolge
 object GoodsQuestions {
 
     val questions = listOf(

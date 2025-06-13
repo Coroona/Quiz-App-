@@ -2,7 +2,7 @@ package com.example.cannaquiz.questions
 
 import com.example.cannaquiz.model.Question
 object TerpsQuestions {
-
+//Fragen nach Abruffolge geordnet
     val questions = listOf(
         Question(
             question = "Was sind Terpene hauptsächlich?",

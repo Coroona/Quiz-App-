@@ -12,7 +12,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        // 3 Sekunden warten, dann zu MainActivity wechseln
+        // 3 Sekunden warten, dann zu MainActivity wechseln automatisch
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish() // SplashScreen schließen, damit man nicht zurück kann

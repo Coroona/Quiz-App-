@@ -83,6 +83,7 @@ class QuestionActivity : AppCompatActivity() {
                     R.id.radioBtn3 -> 2
                     else -> -1
                 }
+                //Autmoatisierte Antworten
 
                 val correctIndex = questions[currentQuestionIndex].correctAnswerIndex
 
